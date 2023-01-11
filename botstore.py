@@ -1,6 +1,9 @@
 import sys, os, time, getpass
 from sys import platform
-import tkinter as tk
+try:
+    import tkinter as tk
+except ModuleNotFoundError:
+    pass
 
 if platform == "linux" or platform == "linux2":
     #!/usr/bin/env python3
