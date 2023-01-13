@@ -1,3 +1,7 @@
+![Size](https://img.shields.io/github/repo-size/xnuvers007/botstore?color=blue&label=Repo%20Size&logo=python&logoColor=red)
+![Lisensi](https://img.shields.io/github/license/xnuvers007/botstore?color=blue&label=License)
+![Website Bot](https://img.shields.io/website?color=blue&down_color=red&down_message=Offline&label=Bot%20Website&logo=telegram&up_color=blue&up_message=Online&url=https%3A%2F%2Fbotostore.com)
+
 # Bot Store Telegram
 
 Bot Store Telegram is a bot that allows you to search for bots in the Telegram store.
