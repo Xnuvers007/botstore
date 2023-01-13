@@ -13,10 +13,11 @@ bot = 128.2k
 - Download this repository as zip and extract it to a folder (or clone it) [Download](https://github.com/Xnuvers007/botstore/archive/refs/heads/master.zip)
 
 - ``` git clone https://github.com/Xnuvers007/botstore.git ```
-- Open cmd and type ``` cd botstore-master ```
+- Open cmd and type ``` cd botstore-master or cd botstore ```
 - type ``` python botstore.py ```
 
 ## Linux Python
+- ``` sudo apt update -y ; sudo apt upgrade -y ```
 - ``` sudo apt-get install python3 ```
 - ``` sudo apt-get install git ```
 - ``` git clone https://github.com/Xnuvers007/botstore.git ```
@@ -24,10 +25,13 @@ bot = 128.2k
 - ``` python3 botstore.py ```
 
 ## Termux Python
+- ``` apt update && apt upgrade -y ```
+- ``` pkg update && pkg upgrade -y```
 - ``` pkg install python3 ```
-- ``` pkg install git ```
+- ``` pkg install git `cp``
 - ``` git clone https://github.com/Xnuvers007/botstore.git ```
 - ``` cd botstore ```
+- ``` pip install -r requirements.txt ```
 - ``` python3 botstore.py ```
 
 ## Windows Executable

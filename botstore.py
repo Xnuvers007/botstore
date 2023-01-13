@@ -1,6 +1,9 @@
 import sys, os, time, getpass
 from sys import platform
-import tkinter as tk
+try:
+    import tkinter as tk
+except Exception:
+    pass
 
 if platform == "linux" or platform == "linux2":
     #!/usr/bin/env python3
@@ -31,50 +34,69 @@ __copyright__ = "Copyright (c) 2023, Xnuvers007"
 __credits__ = ["Xnuvers007", "Botostore.com"]
 __python__ = "3.11.0"
 
+# tanya = str(input("Do you use termux ? (y/n) "))
+# if tanya == "y" or tanya == "Y":
+#     os.system("pip install wheel")
+#     os.system("pkg install libjpeg-turbo")
+#     os.system('''LDFLAGS="-L/system/lib/" CFLAGS="-I/data/data/com.termux/files/usr/include/" pip install Pillow
+# ''')
+# elif tanya == "n" or tanya == "N":
+#     pass
+
+import requests
+from bs4 import BeautifulSoup
+
 try:
     from PIL import Image, ImageTk
     from io import BytesIO
-    import requests
-    from bs4 import BeautifulSoup
-    # from tqdm import tqdm
-except ModuleNotFoundError:
-    if platform == "linux" or platform == "linux2":
-        ask = str(input("Do you want to install requests, beautifulsoup4, pillow ? (y/n) "))
-        if ask == "y" or ask == "Y":
-            user = getpass.getuser()
-            username = input("apakah kamu ingin menginstallnya root atau {} [1, 2]) : ".format(user))
-            if username == "root" or username == "1":
-                os.system("sudo pip3 install requests beautifulsoup4 pillow") # tqdm
-            elif username == user or username == "2":
-                os.system("pip3 install requests beautifulsoup4 pillow") # tqdm
-            else:
-                print("You must write root or {} ".format(user))
-        elif ask == "n" or ask == "N":
-            sys.exit(1)
-        else:
-            print("You must write y or n")
+except Exception as e:
+    pass
 
-    elif platform == "win32":
-        ask = str(input("Do you want to install requests, beautifulsoup4, pillow ? (y/n) ")) # tqdm
-        if ask == "y" or ask == "Y":
-            os.system("pip install requests beautifulsoup4 pillow") # tqdm
-        elif ask == "n" or ask == "N":
-            sys.exit(1)
-        else:
-            print("You must write y or n")
+# try:
+#     from PIL import Image, ImageTk
+#     from io import BytesIO
+#     import requests
+#     from bs4 import BeautifulSoup
+#     # from tqdm import tqdm
+# except Exception as e:
+#     print(e)
+    # if platform == "linux" or platform == "linux2":
+    #     ask = str(input("Do you want to install requests, beautifulsoup4, pillow ? (y/n) "))
+    #     if ask == "y" or ask == "Y":
+    #         user = getpass.getuser()
+    #         username = input("apakah kamu ingin menginstallnya root atau {} [1, 2]) : ".format(user))
+    #         if username == "root" or username == "1":
+    #             os.system("sudo pip3 install requests beautifulsoup4 pillow") # tqdm
+    #         elif username == user or username == "2":
+    #             os.system("pip3 install requests beautifulsoup4 pillow") # tqdm
+    #         else:
+    #             print("You must write root or {} ".format(user))
+    #     elif ask == "n" or ask == "N":
+    #         sys.exit(1)
+    #     else:
+    #         print("You must write y or n")
 
-    elif platform == "darwin":
-        ask = str(input("Do you want to install requests, beautifulsoup4, pillow ? (y/n) "))
-        if ask == "y" or ask == "Y":
-            os.system("pip3 install requests beautifulsoup4 pillow") # tqdm
-        elif ask == "n" or ask == "N":
-            sys.exit(1)
-        else:
-            print("You must write y or n")
+    # elif platform == "win32":
+    #     ask = str(input("Do you want to install requests, beautifulsoup4, pillow ? (y/n) ")) # tqdm
+    #     if ask == "y" or ask == "Y":
+    #         os.system("pip install requests beautifulsoup4 pillow") # tqdm
+    #     elif ask == "n" or ask == "N":
+    #         sys.exit(1)
+    #     else:
+    #         print("You must write y or n")
 
-    else:
-        print("Your platform is not supported")
-        sys.exit(1)
+    # elif platform == "darwin":
+    #     ask = str(input("Do you want to install requests, beautifulsoup4, pillow ? (y/n) "))
+    #     if ask == "y" or ask == "Y":
+    #         os.system("pip3 install requests beautifulsoup4 pillow") # tqdm
+    #     elif ask == "n" or ask == "N":
+    #         sys.exit(1)
+    #     else:
+    #         print("You must write y or n")
+
+    # else:
+    #     print("Your platform is not supported")
+    #     sys.exit(1)
 
 
 # for i in tqdm(range(100), desc='Loading', total=100, bar_format='{l_bar}{bar}|', ncols=100, ascii=True):
@@ -246,10 +268,9 @@ elif daftar == 3:
     #     print(i)
     #     time.sleep(1)
     print('''
-    1. Dana
+    1. Dana (Not Supported termux) https://t.me/xnuvers07
     2. Saweria
     3. Seabank
-    4. ATM
     ''')
     pilih = int(input("Choose your payment method: "))
     if pilih == 1:
