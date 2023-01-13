@@ -28,7 +28,7 @@ bot = 128.2k
 - ``` apt update && apt upgrade -y ```
 - ``` pkg update && pkg upgrade -y```
 - ``` pkg install python3 ```
-- ``` pkg install git `cp``
+- ``` pkg install git ```
 - ``` git clone https://github.com/Xnuvers007/botstore.git ```
 - ``` cd botstore ```
 - ``` pip install -r requirements.txt ```
