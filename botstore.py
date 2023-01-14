@@ -164,7 +164,7 @@ if daftar == 1:
                     print("Bot Status: Offline")
                     
                 botlink2 = "https://botostore.com" + link.get('href')
-                print("Bot Link: " + botlink2)
+                print("Bot Link: " + botlink2 + "?do=open_card")
                 print("=====================================")
                     
                 # print(link.get('href'))
